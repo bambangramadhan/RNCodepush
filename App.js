@@ -40,7 +40,7 @@ export class App extends React.PureComponent {
         </TouchableOpacity>
         <View>
           <Text>
-            {"Ini app versi pertama, belum ada perubahan sama sekali"}
+            {"Bismillah, app ini sudah berubah, semoga berhasil"}
           </Text>
           <Text style={{ marginTop: 150 }}>
             {JSON.stringify(this.state.logs)}
