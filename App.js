@@ -51,6 +51,6 @@ export class App extends React.PureComponent {
   };
 };
 
-let codePushOptions = { checkFrequency: CodePush.CheckFrequency.MANUAL };
+// let codePushOptions = { checkFrequency: CodePush.CheckFrequency.MANUAL };
 
-export default CodePush(codePushOptions)(App);
+export default App;
