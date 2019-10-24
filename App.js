@@ -40,7 +40,7 @@ export class App extends React.PureComponent {
         </TouchableOpacity>
         <View>
           <Text>
-            {"Ayo bisa, berhasil kuy, kamu bisa"}
+            {"Nah berhasil kan"}
           </Text>
           <Text style={{ marginTop: 150 }}>
             {JSON.stringify(this.state.logs)}
@@ -51,6 +51,6 @@ export class App extends React.PureComponent {
   };
 };
 
-let codePushOptions = { checkFrequency: CodePush.CheckFrequency.MANUAL };
+// let codePushOptions = { checkFrequency: CodePush.CheckFrequency.MANUAL };
 
-export default CodePush(codePushOptions)(App);
+export default CodePush(App);
