@@ -40,7 +40,7 @@ export class App extends React.PureComponent {
         </TouchableOpacity>
         <View>
           <Text>
-            {"Ngopi  skuy"}
+            {"Ngopi bareng skuy"}
           </Text>
           <Text style={{ marginTop: 150 }}>
             {JSON.stringify(this.state.logs)}
