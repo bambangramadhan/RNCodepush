@@ -4,6 +4,7 @@ import android.app.Application;
 import android.content.Context;
 import com.facebook.react.PackageList;
 import com.facebook.react.ReactApplication;
+import com.microsoft.codepush.react.CodePush;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.soloader.SoLoader;
@@ -18,7 +19,6 @@ import com.reactnativenavigation.react.ReactGateway;
 
 import com.facebook.react.ReactInstanceManager;
 
-import com.microsoft.codepush.react.CodePush;
 
 // public class MainApplication extends Application implements ReactApplication {
 
@@ -44,6 +44,7 @@ import com.microsoft.codepush.react.CodePush;
 //           // return packages;
 //             return Arrays.<ReactPackage>asList(
 //               new MainReactPackage(),
+            
 //               new CodePush(getResources().getString(R.string.reactNativeCodePush_androidDeploymentKey), getApplicationContext(), BuildConfig.DEBUG, R.string.CodePushPublicKey)
 //             );
 //           }
@@ -121,7 +122,7 @@ public class MainApplication extends NavigationApplication {
         // Add additional packages you require here
         // No need to add RnnPackage and MainReactPackage
         return Arrays.<ReactPackage>asList(
-          new CodePush(getResources().getString(R.string.reactNativeCodePush_androidDeploymentKey), getApplicationContext(), BuildConfig.DEBUG, R.string.CodePushPublicKey)
+            new CodePush(getResources().getString(R.string.reactNativeCodePush_androidDeploymentKey), getApplicationContext(), BuildConfig.DEBUG)
             // eg. new VectorIconsPackage()
         );
     }
