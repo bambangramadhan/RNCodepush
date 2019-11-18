@@ -44,7 +44,7 @@ export class Test extends React.PureComponent {
         </TouchableOpacity>
         <View>
           <Text>
-            {"Udah berubah lagi guys"}
+            {"Screen test ini udah berubah lagi seiring dengan dilakukan nya test codepush"}
           </Text>
           <Text style={{ marginTop: 150 }}>
             {JSON.stringify(this.state.logs)}
